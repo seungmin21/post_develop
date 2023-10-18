@@ -2,6 +2,7 @@ const http = require('http');
 const querystring = require('querystring');
 const fs = require('fs')
 
+
 http.createServer((req, res) => {
   if (req.method === 'GET' && req.url === '/') {
       fs.readFile('index.html', 'utf8', (err, data) => {
