@@ -5,17 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    #root {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+    #right-container {
+      display : flex;
+      flex-direction: column;
+    }
+    .margin-top-1 {
+      margin-top: 1px;
+    }
+    .margin-top {
+      margin-top: 15px;
+    }
+    .padding-top {
+      padding-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <form action="" method="POST">
     <div id="root">
-      <div></div>
-      <div>
+      <div id="left-container" class="margin-top-1">
+        <div class="margin-top-1">ID</div>
+        <div class="margin-top">PW</div>
+        <div class="margin-top">PW</div>
+        <div class="margin-top padding-top">Email</div>
+        <div class="margin-top"></div>
+      </div>
+      <div id="right-container">
         <input type="text" placeholder="아이디를 입력해주세요">
-        <input type="text" placeholder="비밀번호를 입력해주세요">
-        <input type="text" placeholder="다시 한번 입력해주세요">
-        <input type="text" placeholder="이메일을 입력해주세요">
-        <input type="button" value="sign up">
+        <input type="text" placeholder="비밀번호를 입력해주세요" class="margin-top">
+        <input type="text" placeholder="다시 한번 입력해주세요" class="margin-top">
+        <input type="text" placeholder="이메일을 입력해주세요" class="margin-top">
+        <input type="button" value="sign up" class="margin-top">
       </div>
     </div>
   </form>
