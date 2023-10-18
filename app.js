@@ -3,7 +3,7 @@ const querystring = require('querystring');
 
 http.createServer((req, res) => {
   let body = '';
-  if (req.method === 'POST' && req.url === '/') {
+  if (req.method === 'POST' && req.url === '/sub') {
     req.on('data', chunk => {
       body += chunk, toString()
     })
